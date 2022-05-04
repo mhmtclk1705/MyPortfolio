@@ -1,28 +1,25 @@
-.portfolio-container{
-
-@include bgImage(100vh, $background-image-url);
-
+//*****************************************************
+//*   HOME PAGE
+//*****************************************************
+.home-bgImg-container {
+  @include bgImage(100vh, $main-bgImage-path);
 }
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #fff;
 
-.portfolio-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:84vh;
-
-    .portfolio-content-up,
-    .portfolio-content-down{
-        // font-size: 1.5rem;
-        margin-bottom: 20px;
+    &--last {
+      color: red;
+      font-weight: 700;
     }
-    .portfolio-content-mid{
-        font-size: 2rem;
-        margin-bottom: 30px;
-        border-bottom: 2px solid $text-color;
-        width: 100%;
-        text-align: center;
-    }
-    
+  }
 }

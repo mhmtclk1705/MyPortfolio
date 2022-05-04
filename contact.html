@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Portfolio-Contact</title>
-</head>
-<body>
-    <div class="portfolio-container">
-        <div class="portfolio-header">
-            <a href="index.html">HOME</a><a href="aboutme.html">ABOUT ME</a><a href="myprojects.html">MY PROJECTS</a><a href="contact.html"><span>CONTACT</span></a>
+  </head>
+  <body>
+    <div class="contact-bgImg-container">
+
+      <!-- CONTACT NAV -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link">My Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link nav__link--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- CONTACT MAIN -->
+      <main class="contact">
+        <h2>Contact Me ...</h2>
+        <div class="contact__list">
+          <div class="contact__item">
+            <i class="fas fa-envelope"></i> Email
+            <div class="text-secondary">mehmetcelik1705@gmail.com</div>
+          </div>
+          <div class="contact__item">
+            <i class="fas fa-mobile-alt"></i> Phone
+            <div class="text-secondary">+90 554 701 78 17</div>
+          </div>
+          <div class="contact__item">
+            <i class="fas fa-map-marker-alt"></i> Address
+            <div class="text-secondary">Izmir, Turkey</div>
+          </div>
         </div>
-        <div class="contact-portfolio-content">
-        <div class="contact-portfolio-content-head"><h2>Contact Me ...</h2></div>
-        <div class="contact-portfolio-content-adress">
-            <div>
-                <i class="fas fa-envelope"></i> Email
-                <p>mehmetcelik1705@gmail.com</p>
-              </div>
-              <div>
-                <i class="fas fa-mobile-alt"></i> Phone
-                <p>+90 554 701 78 17</p>
-              </div>
-              <div>
-                <i class="fas fa-map-marker-alt"></i> Address
-                <p>Izmir, Turkey</p>
-              </div>
+      </main>
+
+      <!-- CONTACT FOOTER -->
+      <footer class="middle">
+        <div class="social-icons">
+          <a href="https://twitter.com/MJohnSteel" target="_blank">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://t.co/Nt2szG9nmz" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/mjohnsteel/" target="_blank">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://t.co/eDXRLf0cpa" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
         </div>
-        </div>
-        <div class="contact-portfolio-footer">
-            <div class="portfolio-footer-icon">
-              <a href="https://twitter.com/MJohnSteel" target="_blank">
-                <i class="fab fa-twitter fa-2x"></i>
-              </a>
-              <a href="https://t.co/Nt2szG9nmz" target="_blank">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-              <a href="https://www.instagram.com/mjohnsteel/" target="_blank">
-                <i class="fab fa-instagram fa-2x"></i>
-              </a>
-              <a href="https://t.co/eDXRLf0cpa" target="_blank">
-                <i class="fab fa-github fa-2x"></i>
-              </a>
-            </div>
-            <div class="portfolio-footer-copyright">&copy; Copyright 2021</div>
-        </div>
+        <div class="copyright">&copy; Copyright 2021</div>
+      </footer>
     </div>
-    <script src="https://kit.fontawesome.com/8c29faa18e.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

@@ -1,58 +1,43 @@
-.about-portfolio-container{
+//*****************************************************
+//*   ABOUT PAGE
+//*****************************************************
 
-    @include  bgImage(60vh, $background-image-url);//'../img/model-1.jpg'
-    background-position: 0 85rem;
-}
-
-.about-portfolio-content{
-    padding: 30px;
+.about-bgImg-container {
+  @include bgImage(50vh, '../img/model-1.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .about__bio-image {
     text-align: center;
- 
-    
-    h2{
-        font-size: 2.5rem;
-        color: $secondary-color;
-        margin-bottom: 20px;
+    h2 {
+      font-size: 3rem;
+      color: $secondary-color;
     }
-    p{
-        font-size: 1.2rem;
-        margin-bottom: 60px;
-        line-height: 1.2;
-        
+    p {
+      font-size: 1.2rem;
+      margin: 2rem;
     }
-
+  }
 }
 
-.about-portfolio-footer-content{
-    padding: 20px;
+//!grandparent
+.about {
+  &__container {
     width: 70vw;
     margin: 2rem auto;
-    div{
-        background: lighten($primary-color, 10%);
-        border-bottom: 4px solid $secondary-color;
-        margin-bottom: 15px;
-        padding: 20px;
-        line-height: 1.5rem;
+  }
+  .about__job {
+    margin: 1rem;
+    background: lighten($primary-color, 10%);
+    padding: 1rem;
+    border-bottom: 5px solid $secondary-color;
+
+    h2,
+    h3 {
+      margin: 0.5rem 0;
     }
-}
-@media (max-width: 1024px){
-.about-portfolio-content{
-    p{
-        font-size: 1rem;
+    h6 {
+      margin: 0.3rem 0;
     }
-}
-}
-@media (max-width: 768px){
-.about-portfolio-content{
-    p{
-        font-size: .9rem;
-    }
-}
-}
-@media (max-width: 512px){
-.about-portfolio-content{
-    p{
-        font-size: .6rem;
-    }
-}
+  }
 }
