@@ -1,0 +1,90 @@
+.myprojects-portfolio-container{
+   
+    @include bgImage(40vh,$background-image-url);
+    background-position: 0 75rem;
+
+}
+.myprojects-portfolio-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    height: 72vh;
+
+    
+}
+
+.myprojects-portfolio-footer-content{
+    padding: 20px;
+    width: 90vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;        
+    .content-img{
+        display: flex;
+        flex-direction: row;
+        width: 33%;
+        margin-bottom: 10px;
+        border-bottom: 5px solid $secondary-color;
+        position: relative;
+        // &::after {
+        //     // content: '';
+        //     position: absolute;
+        //     height: 100%;
+        //     width: 100%;
+        //     left: 0;
+        //     background: $secondary-color;
+        //     opacity: 0;
+        // }
+        // &:hover::after{
+        //     opacity: 0.7;
+        //     cursor: pointer;
+        //     @include transition(1s);
+        // }  
+        &:hover{
+            cursor: pointer;
+            background: $secondary-color;
+            @include transition(1s);
+            opacity: 0.3;
+
+        }
+        &{
+            a{
+                text-decoration: none;
+    
+            }
+            h3{
+                font-size: 1.5rem;
+                color: white;
+                margin: 0.5rem;
+                text-align: center;
+                
+            }
+        }
+        
+    }
+    img{
+        width: 100%;
+        height: fit-content;
+    }
+    .my-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        ;
+        a{
+            text-decoration: none;
+
+        }
+        h3{
+            font-size: 1.5rem;
+            color: $secondary-color;
+            margin: 0.5rem;
+            
+            
+        }
+    }
+    
+}
